@@ -23,7 +23,7 @@
               <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                    <a href="#" class="text-xl font-bold block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                    <a href="#" class="text-xl font-bold block py-2 pr-4 pl-3 text-black  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
                   </li>
                   <li>
                     <a href="#" class="text-xl font-bold block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">our Movies</a>
@@ -36,13 +36,13 @@
             </div>
           </nav>
           <!-- banner -->
-          <section class=" bg-banner h-screen flex items-center pl-20 font-Bebas">
-                <div class="w-100 h-100 text-white ">
+          <section class=" bg-banner lg:h-screen h-3/4 flex items-center lg:pl-20 font-Bebas py-9 lg:py-0 text-center lg:text-left">
+                <div class=" text-white w-auto">
                     <h6 class="text-lg">Movie production studio</h6>
-                    <h1 class="text-7xl">Films MAde to <br>
+                    <h1 class="md:text-7xl text-xl">Films MAde to <br>
                     <span class="text-textyello">Perfection</span>
                     </h1>
-                    <p class="font-Montserrat text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, <br>
+                    <p class="font-Montserrat md:text-lg text-sm  mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, <br class="hidden md:block">
                         luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         <button class="text-lg border-2 px-4 py-2 hover:text-blue-300 hover:border-blue-300 mt-10">Discover More</button>
             </div>
@@ -210,7 +210,8 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <!-- navber -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     <script>
         tailwind.config = {
           theme: {
