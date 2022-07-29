@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhaka Naka Production</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+        </style>
 </head>
 <body>
-    
-
-
+    <header>
+        <nav class="flex justify-between space-x-4 px-20 py-10 text-black font-Bebas uppercase">
+            <h2 class="text-4xl font-bold">Jhaka Naka Production</h2>
+            <ul class=" flex space-x-4 items-center ">
+                <li class="inline-block text-xl font-bold"><a href="#">About US </a></li>
+                <li class="inline-block text-xl font-bold"><a href="#">our Movies</a></li>
+                <li class="inline-block text-xl font-bold"><a href="#">Services</a></li>
+            </ul>
+          </nav> 
+          <section class=" bg-banner h-screen flex items-center pl-20 font-Bebas">
+                <div class="w-100 h-100 text-white ">
+                    <h6 class="text-lg">Movie production studio</h6>
+                    <h1 class="text-7xl">Films MAde to <br>
+                    <span class="text-textyello">Perfection</span>
+                    </h1>
+                    <p class="font-Montserrat text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, <br>
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <button class="text-lg border-2 px-4 py-2 hover:text-blue-300 hover:border-blue-300 mt-10">Discover More</button>
+            </div>
+          </section >
+    </header>   
 
 
 
@@ -21,5 +42,25 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                'Bebas': ["Bebas Neue", "cursive"],
+                'Montserrat': ['Montserrat', 'sans-serif'],
+    },
+            extend: {
+              colors: {
+                textblack: '#da373d',
+                textyello:'#FECC02',
+              },
+              backgroundImage: {
+            'banner': "url('images/banner.jpg')",
+      },
+            }
+          }
+        }
+      </script>
 </body>
 </html>
